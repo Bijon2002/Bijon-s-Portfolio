@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - iPortfolio Bootstrap Template</title>
+  <title>Hiii, Im Bijon... </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/portfolio/bat2.png" rel="icon">
+  <link href="assets/img/portfolio/bat2.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -27,6 +27,212 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Dark Mode Styles -->
+  <style>
+    /* --- DARK THEME: dark blue, light blue, white, yellow accents --- */
+    body.dark-mode {
+      background: #14213d !important;
+      color: #e0f7fa !important;
+    }
+    .dark-mode .section,
+    .dark-mode .light-background,
+    .dark-mode .container,
+    .dark-mode .main,
+    .dark-mode .about-summary,
+    .dark-mode .info-wrap,
+    .dark-mode .php-email-form,
+    .dark-mode .portfolio-content,
+    .dark-mode .project-name,
+    .dark-mode .project-details,
+    .dark-mode #footer,
+    .dark-mode .header {
+      background: #1a2238 !important;
+      color: #e0f7fa !important;
+    }
+    /* Hero name in darkest blue, intro in white for dark mode */
+    .dark-mode #hero h2 {
+      color: #0a174e !important;
+      text-shadow: 0 2px 8px #0004;
+    }
+    .dark-mode #hero p {
+      color: #fff !important;
+      text-shadow: 0 2px 8px #0004;
+    }
+    /* Contact section: Address, Call Us, Email Me headings in yellow */
+    .dark-mode .info-item h3 {
+      color: #ffd700 !important;
+      text-shadow: 0 1px 6px #222, 0 0px 1px #fff2;
+    }
+    /* About info values and resume info values in light blue */
+    .dark-mode .about-summary .info-item span,
+    .dark-mode .about-summary .info-item a[href^="mailto"],
+    .dark-mode .about-summary .info-item a[href*="linkedin.com"],
+    .dark-mode .about-summary .info-item a[target="_blank"],
+    .dark-mode .resume-item ul li,
+    .dark-mode .resume-item a {
+      color: #4fc3f7 !important; /* light blue */
+    }
+    /* All other spans and links in dark mode become white */
+    .dark-mode span,
+    .dark-mode a {
+      color: #fff !important;
+    }
+    /* Resume section headings (h3, h4, h5) in yellow */
+    .dark-mode .resume-title,
+    .dark-mode .resume-item h4,
+    .dark-mode .resume-item h5 {
+      color: #ffd700 !important;
+      text-shadow: 0 1px 6px #222, 0 0px 1px #fff2;
+    }
+    .dark-mode .about-summary .info-item strong,
+    .dark-mode .about-summary .info-item i {
+      color: #ffd700 !important;
+    }
+    .dark-mode .about-summary .info-item {
+      background: linear-gradient(135deg, #1a2238 60%, #1a2238 100%) !important;
+      box-shadow: 0 2px 12px 0 rgba(30,30,30,0.12);
+    }
+    .dark-mode .badge.bg-primary,
+    .dark-mode .badge.bg-secondary,
+    .dark-mode .badge.bg-success {
+      background: #ffd700 !important;
+      color: #14213d !important;
+    }
+    /* Nav menu: only highlight active link in yellow, others in light blue */
+    .dark-mode .navmenu a {
+      color: #4fc3f7 !important;
+      transition: color 0.2s;
+    }
+    .dark-mode .navmenu a.active,
+    .dark-mode .navmenu a:focus,
+    .dark-mode .navmenu a:hover {
+      color: #ffd700 !important;
+    }
+    /* Only highlight .active link in yellow, do not highlight others unless hovered/focused */
+    .dark-mode .navmenu .navicon {
+      color: #4fc3f7 !important;
+      transition: color 0.2s;
+    }
+    .dark-mode .navmenu a.active .navicon,
+    .dark-mode .navmenu a:focus .navicon,
+    .dark-mode .navmenu a:hover .navicon {
+      color: #ffd700 !important;
+    }
+    .dark-mode .sitename,
+    .dark-mode .logo h1 {
+      color: #ffd700 !important;
+    }
+    .dark-mode .portfolio-content {
+      background: #1a2238 !important;
+      color: #e0f7fa !important;
+    }
+    .dark-mode .portfolio-content .project-name,
+    .dark-mode .portfolio-content .project-details {
+      background: #1a2238 !important;
+      color: #e0f7fa !important;
+    }
+    .dark-mode .portfolio-content .project-details strong {
+      color: #ffd700 !important;
+    }
+    .dark-mode .info-wrap,
+    .dark-mode .php-email-form {
+      background: #1a2238 !important;
+      color: #e0f7fa !important;
+    }
+    .dark-mode .info-item i {
+      color: #ffd700 !important;
+    }
+    .dark-mode .info-item strong {
+      color: #ffd700 !important;
+    }
+    .dark-mode .info-item span,
+    .dark-mode .info-item a {
+      color: #fff !important;
+    }
+    .dark-mode .section-title h2,
+    .dark-mode .section-title p {
+      color: #ffd700 !important;
+    }
+    .dark-mode .main {
+      background: #14213d !important;
+    }
+    .dark-mode .header {
+      background: #1a2238 !important;
+      border-right: 1px solid #333;
+    }
+    .dark-mode .footer {
+      background: #1a2238 !important;
+      color: #e0f7fa !important;
+    }
+    .dark-mode #scroll-top {
+      background: #ffd700 !important;
+      color: #14213d !important;
+    }
+    .dark-mode .form-control {
+      background: #1a2238 !important;
+      color: #e0f7fa !important;
+      border-color: #444 !important;
+    }
+    .dark-mode .form-control:focus {
+      background: #1a2238 !important;
+      color: #e0f7fa !important;
+      border-color: #ffd700 !important;
+      box-shadow: 0 0 0 0.2rem rgba(255,215,0,0.15);
+    }
+    .dark-mode .btn,
+    .dark-mode button,
+    .dark-mode input[type="submit"] {
+      background: #ffd700 !important;
+      color: #14213d !important;
+      border: none;
+    }
+    .dark-mode .btn:hover,
+    .dark-mode button:hover,
+    .dark-mode input[type="submit"]:hover {
+      background: #fff !important;
+      color: #14213d !important;
+    }
+    /* Remove black label background from hero in dark mode */
+    .dark-mode #hero .container {
+      background: transparent !important;
+    }
+    /* Toggle button styles */
+    #dark-mode-toggle {
+      position: fixed;
+      top: 18px;
+      right: 24px;
+      z-index: 9999;
+      background: #1a2238;
+      color: #ffd700;
+      border: none;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.7rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    #dark-mode-toggle:focus {
+      outline: 2px solid #ffd700;
+    }
+    #dark-mode-toggle .bi {
+      pointer-events: none;
+    }
+    @media (max-width: 575.98px) {
+      #dark-mode-toggle {
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+
   <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -37,6 +243,11 @@
 </head>
 
 <body class="index-page">
+
+  <!-- Dark Mode Toggle Button -->
+  <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+    <i class="bi bi-moon"></i>
+  </button>
 
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
@@ -66,6 +277,37 @@
         <li><a href="#projects"><i class="bi bi-images navicon"></i> Projects</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
+      <script>
+        // Auto-highlight nav link based on scroll position
+        document.addEventListener('DOMContentLoaded', function() {
+          var sections = ['hero', 'about', 'resume', 'projects', 'contact'];
+          var navLinks = Array.from(document.querySelectorAll('.navmenu a'));
+          function onScroll() {
+            var scrollPos = window.scrollY || window.pageYOffset;
+            var offset = 120; // header offset
+            var found = false;
+            for (var i = sections.length - 1; i >= 0; i--) {
+              var section = document.getElementById(sections[i]);
+              if (section) {
+                var top = section.getBoundingClientRect().top + window.scrollY - offset;
+                if (scrollPos >= top) {
+                  navLinks.forEach(function(link) { link.classList.remove('active'); });
+                  var activeLink = navLinks.find(function(link) { return link.getAttribute('href') === '#' + sections[i]; });
+                  if (activeLink) activeLink.classList.add('active');
+                  found = true;
+                  break;
+                }
+              }
+            }
+            if (!found) {
+              navLinks.forEach(function(link) { link.classList.remove('active'); });
+              navLinks[0].classList.add('active');
+            }
+          }
+          window.addEventListener('scroll', onScroll, { passive: true });
+          onScroll();
+        });
+      </script>
     </nav>
 
   </header>
@@ -89,13 +331,76 @@
 
       <!-- Section Title -->
       <div class="container section-title text-center" data-aos="fade-up" style="border-bottom: none; box-shadow: none;">
-        <h2 style="border-bottom: none; box-shadow: none;">About</h2>
-        <div class="my-3">
-          <img src="assets/img/my-profile-img.png" class="img-fluid rounded-circle shadow mb-3" alt="Bijon profile" style="max-width: 220px; display: block; margin-left: auto; margin-right: auto;">
-          <div class="mt-2 text-center">
-            <span class="badge bg-primary mb-2" style="font-size:1.1em;">UI/UX Enthusiast & Full-Stack Developer</span>
+      
+        <div class="my-3 d-flex flex-column flex-md-row align-items-center justify-content-center gap-3">
+          <img src="assets/img/my-profile-img.png" class="img-fluid rounded-circle shadow mb-3 mb-md-0" alt="Bijon profile" style="max-width: 220px; width: 100%; height: auto;">
+          <div class="mt-2 text-center text-md-start">
+            <span class="badge bg-primary mb-2 about-role-badge">UI/UX Enthusiast & Full-Stack Developer</span>
           </div>
         </div>
+    <style>
+      /* Responsive badge for About role */
+      .about-role-badge {
+        font-size: 1.1em;
+        padding: 0.6em 1.2em;
+        display: inline-block;
+        white-space: normal;
+        word-break: break-word;
+        max-width: 100%;
+      }
+      .my-3.d-flex.flex-md-row img {
+        max-width: 220px;
+        min-width: 120px;
+        width: 100%;
+        height: auto;
+      }
+      .my-3.d-flex.flex-md-row .about-role-badge {
+        font-size: 1.25em;
+        padding: 0.7em 1.5em;
+      }
+      @media (max-width: 991.98px) {
+        .my-3.d-flex.flex-md-row {
+          flex-direction: column !important;
+          align-items: center !important;
+        }
+        .my-3.d-flex.flex-md-row img {
+          margin-bottom: 1rem !important;
+        }
+        .my-3.d-flex.flex-md-row .about-role-badge {
+          font-size: 1.1em;
+          padding: 0.6em 1.2em;
+        }
+      }
+      @media (max-width: 575.98px) {
+        .about-role-badge {
+          font-size: 0.98em;
+          padding: 0.5em 0.7em;
+        }
+      }
+      @media (max-width: 400px) {
+        .about-role-badge {
+          font-size: 0.92em;
+          padding: 0.4em 0.5em;
+        }
+      }
+      /* Responsive hero name and intro */
+      @media (max-width: 575.98px) {
+        #hero h2 {
+          font-size: 2rem !important;
+        }
+        #hero p {
+          font-size: 1.1rem !important;
+        }
+      }
+      @media (max-width: 400px) {
+        #hero h2 {
+          font-size: 1.3rem !important;
+        }
+        #hero p {
+          font-size: 0.95rem !important;
+        }
+      }
+    </style>
         <div class="about-summary mx-auto" style="max-width: 900px;">
           <div class="row justify-content-center align-items-center g-4 py-4">
             <div class="col-lg-8 col-md-10 mx-auto">
@@ -333,7 +638,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
+ 
 
       </div><!-- End Section Title -->
 
@@ -441,57 +746,58 @@
     <!-- Projects Section -->
     <section id="projects" class="portfolio section light-background">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Projects</h2>
-        <p>Here are some of my featured projects, showcasing my skills in full-stack development, UI/UX, and cloud solutions.</p>
+   
+      <center> <p>Here are some of my featured projects, showcasing my skills in full-stack development, UI/UX, and cloud solutions.</p></center> 
       </div>
       <div class="container">
         <div class="row gy-5 gx-5 justify-content-center align-items-stretch" data-aos="fade-up" data-aos-delay="200">
           <!-- FastTrack Pro -->
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <a class="portfolio-content w-100 h-100 text-decoration-none text-reset shadow-sm rounded-4 overflow-hidden d-flex flex-column" href="#" style="cursor:pointer; background:#fff; transition:box-shadow .2s;">
-              <img src="assets/img/portfolio/app-1.jpg" class="img-fluid rounded-top" alt="FastTrack Pro" style="object-fit:cover; min-height:180px; max-height:220px; width:100%;">
+            <a class="portfolio-content w-100 h-100 text-decoration-none text-reset shadow-sm rounded-4 overflow-hidden d-flex flex-column" href="https://github.com/Bijon2002/FastTrack.git" target="_blank" rel="noopener" style="cursor:pointer; background:#fff; transition:box-shadow .2s;">
+              <img src="assets/img/portfolio/fastr.png" class="img-fluid rounded-top" alt="FastTrack Pro" style="object-fit:cover; min-height:180px; max-height:220px; width:100%;">
               <div class="project-name text-center py-3 px-2" style="font-weight:600; font-size:1.08rem;">FastTrack Pro – Courier Management System</div>
               <div class="project-details text-center px-3 pb-3">Book deliveries, calculate distance & ETA, real-time tracking, user dashboard, session management.<br><strong>Tech:</strong> Java Swing, MySQL, Google Maps API</div>
             </a>
           </div>
           <!-- Flagify -->
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <a class="portfolio-content w-100 h-100 text-decoration-none text-reset shadow-sm rounded-4 overflow-hidden d-flex flex-column" href="#" style="cursor:pointer; background:#fff; transition:box-shadow .2s;">
-              <img src="assets/img/portfolio/app-2.jpg" class="img-fluid rounded-top" alt="Flagify" style="object-fit:cover; min-height:180px; max-height:220px; width:100%;">
+            <a class="portfolio-content w-100 h-100 text-decoration-none text-reset shadow-sm rounded-4 overflow-hidden d-flex flex-column" href="https://github.com/Bijon2002/Flagify.git" target="_blank" rel="noopener" style="cursor:pointer; background:#fff; transition:box-shadow .2s;">
+              <img src="assets/img/portfolio/flagi.png" class="img-fluid rounded-top" alt="Flagify" style="object-fit:cover; min-height:180px; max-height:220px; width:100%;">
               <div class="project-name text-center py-3 px-2" style="font-weight:600; font-size:1.08rem;">Flagify – Android Quiz App</div>
               <div class="project-details text-center px-3 pb-3">Flag guessing game, Google Sign-In, leaderboard, country facts, capital finder.<br><strong>Tech:</strong> Java, XML, Firebase, REST Countries API</div>
             </a>
           </div>
           <!-- SLIIT City Uni Moodle -->
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <a class="portfolio-content w-100 h-100 text-decoration-none text-reset shadow-sm rounded-4 overflow-hidden d-flex flex-column" href="#" style="cursor:pointer; background:#fff; transition:box-shadow .2s;">
-              <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid rounded-top" alt="SLIIT City Uni Moodle" style="object-fit:cover; min-height:180px; max-height:220px; width:100%;">
+            <a class="portfolio-content w-100 h-100 text-decoration-none text-reset shadow-sm rounded-4 overflow-hidden d-flex flex-column" href="https://www.figma.com/design/7uSj6EPxPfI3pBbvk1E9Cx/SLIIT-moodle-page" target="_blank" rel="noopener" style="cursor:pointer; background:#fff; transition:box-shadow .2s;">
+              <img src="assets/img/portfolio/sliit2.png" class="img-fluid rounded-top" alt="SLIIT City Uni Moodle" style="object-fit:cover; min-height:180px; max-height:220px; width:100%;">
               <div class="project-name text-center py-3 px-2" style="font-weight:600; font-size:1.08rem;">SLIIT City Uni Moodle – High-Fidelity Design</div>
               <div class="project-details text-center px-3 pb-3">Modern UI for student experience, notifications, and progress tracking.<br><strong>Tech:</strong> Figma</div>
             </a>
           </div>
           <!-- Medi-Care-Plus -->
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <a class="portfolio-content w-100 h-100 text-decoration-none text-reset shadow-sm rounded-4 overflow-hidden d-flex flex-column" href="#" style="cursor:pointer; background:#fff; transition:box-shadow .2s;">
-              <img src="assets/img/portfolio/product-1.jpg" class="img-fluid rounded-top" alt="Medi-Care-Plus" style="object-fit:cover; min-height:180px; max-height:220px; width:100%;">
+            <a class="portfolio-content w-100 h-100 text-decoration-none text-reset shadow-sm rounded-4 overflow-hidden d-flex flex-column" href="https://github.com/Bijon2002/OOP-JAVA.git" target="_blank" rel="noopener" style="cursor:pointer; background:#fff; transition:box-shadow .2s;">
+              <img src="assets/img/portfolio/medi.png" class="img-fluid rounded-top" alt="Medi-Care-Plus" style="object-fit:cover; min-height:180px; max-height:220px; width:100%;">
               <div class="project-name text-center py-3 px-2" style="font-weight:600; font-size:1.08rem;">Medi-Care-Plus – Healthcare Facility System</div>
               <div class="project-details text-center px-3 pb-3">Outpatient services, pharmacy management, appointment scheduling.<br><strong>Tech:</strong> Java, OOP, API</div>
             </a>
           </div>
           <!-- AttendanceSystem -->
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <a class="portfolio-content w-100 h-100 text-decoration-none text-reset shadow-sm rounded-4 overflow-hidden d-flex flex-column" href="#" style="cursor:pointer; background:#fff; transition:box-shadow .2s;">
-              <img src="assets/img/portfolio/books-1.jpg" class="img-fluid rounded-top" alt="AttendanceSystem" style="object-fit:cover; min-height:180px; max-height:220px; width:100%;">
+            <a class="portfolio-content w-100 h-100 text-decoration-none text-reset shadow-sm rounded-4 overflow-hidden d-flex flex-column" href="https://github.com/Bijon2002/AttendanceSystem.git" target="_blank" rel="noopener" style="cursor:pointer; background:#fff; transition:box-shadow .2s;">
+              <img src="assets/img/portfolio/atten.jpg" class="img-fluid rounded-top" alt="AttendanceSystem" style="object-fit:cover; min-height:180px; max-height:220px; width:100%;">
               <div class="project-name text-center py-3 px-2" style="font-weight:600; font-size:1.08rem;">AttendanceSystem – Student Attendance App</div>
               <div class="project-details text-center px-3 pb-3">Attendance tracking, add/update students, simple UI.<br><strong>Tech:</strong> C#, PHP, MySQL</div>
             </a>
           </div>
           <!-- Event Vibe -->
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <a class="portfolio-content w-100 h-100 text-decoration-none text-reset shadow-sm rounded-4 overflow-hidden d-flex flex-column" href="#" style="cursor:pointer; background:#fff; transition:box-shadow .2s;">
-              <img src="assets/img/portfolio/product-2.jpg" class="img-fluid rounded-top" alt="Event Vibe" style="object-fit:cover; min-height:180px; max-height:220px; width:100%;">
+            <a class="portfolio-content w-100 h-100 text-decoration-none text-reset shadow-sm rounded-4 overflow-hidden d-flex flex-column" href="https://github.com/Bijon2002/Event_vibe.git" target="_blank" rel="noopener" style="cursor:pointer; background:#fff; transition:box-shadow .2s;">
+              <img src="assets/img/portfolio/event.png" class="img-fluid rounded-top" alt="Event Vibe" style="object-fit:cover; min-height:180px; max-height:220px; width:100%;">
               <div class="project-name text-center py-3 px-2" style="font-weight:600; font-size:1.08rem;">Event Vibe – Event Management Web App</div>
               <div class="project-details text-center px-3 pb-3">Event/venue booking, 9 event packages, user-friendly planning.<br><strong>Tech:</strong> HTML, CSS, JavaScript, PHP, MySQL</div>
+            </a>
     <style>
       .portfolio-content {
         position: relative;
@@ -583,100 +889,226 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
+     <center>
         <p>Let's build something awesome together! Got a project or idea? Reach out to me anytime.
-
+</center>
         </p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
+        <div class="row gy-4 justify-content-center align-items-stretch contact-row-custom">
+          <div class="col-12 col-lg-5 d-flex flex-column">
+            <div class="info-wrap flex-grow-1">
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h3>Address</h3>
                   <p>Chunnakam, Jaffna, Sri Lanka</p>
                 </div>
-              </div><!-- End Info Item -->
-
+              </div>
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
                   <h3>Call Us</h3>
                   <p>+94 773155125</p>
                 </div>
-              </div><!-- End Info Item -->
-
+              </div>
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email Me</h3>
                   <p>Bijonbijosilin@gmail.com</p>
                 </div>
-              </div><!-- End Info Item -->
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.3778517543346!2d80.01005757322491!3d9.73402537755855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe5366e58e96f3%3A0x621c662b97035846!2sUduvil%20Rd!5e0!3m2!1sen!2slk!4v1748927130039!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+              </div>
+              <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.3778517543346!2d80.01005757322491!3d9.73402537755855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe5366e58e96f3%3A0x621c662b97035846!2sUduvil%20Rd!5e0!3m2!1sen!2slk!4v1748927130039!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
           </div>
-
-          <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-12 col-lg-7 d-flex flex-column">
+            <form action="forms/contact.php" method="post" class="php-email-form flex-grow-1 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Your Name</label>
                   <input type="text" name="name" id="name-field" class="form-control" required="">
                 </div>
-
                 <div class="col-md-6">
                   <label for="email-field" class="pb-2">Your Email</label>
                   <input type="email" class="form-control" name="email" id="email-field" required="">
                 </div>
-
                 <div class="col-md-12">
                   <label for="subject-field" class="pb-2">Subject</label>
                   <input type="text" class="form-control" name="subject" id="subject-field" required="">
                 </div>
-
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2">Message</label>
                   <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
                 </div>
-
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
-
                   <button type="submit">Send Message</button>
                 </div>
-
               </div>
             </form>
-          </div><!-- End Contact Form -->
-
+          </div>
         </div>
-
-      </div>
+        <style>
+          /* Responsive Google Map */
+          .map-responsive {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-top: 16px;
+          }
+          .map-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+          }
+          .info-wrap {
+            background: var(--surface-color);
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.08);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+          }
+          .php-email-form {
+            background: var(--surface-color);
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.08);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+          .contact-row-custom {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            justify-content: center !important;
+            align-items: stretch !important;
+          }
+          .contact .container {
+            max-width: 1200px;
+          }
+          @media (max-width: 1199.98px) {
+            .contact .container {
+              max-width: 100%;
+            }
+          }
+          @media (max-width: 991.98px) {
+            .info-wrap, .php-email-form {
+              margin-bottom: 32px;
+              padding: 20px;
+            }
+            .contact-row-custom {
+              flex-direction: column !important;
+              align-items: stretch !important;
+            }
+          }
+          @media (max-width: 767.98px) {
+            .info-wrap, .php-email-form {
+              padding: 12px;
+            }
+            .map-responsive {
+              padding-bottom: 60%;
+            }
+          }
+          @media (max-width: 575.98px) {
+            .info-wrap, .php-email-form {
+              padding: 8px;
+            }
+            .map-responsive {
+              padding-bottom: 75%;
+            }
+            .contact-row-custom {
+              flex-direction: column !important;
+              align-items: stretch !important;
+            }
+            .col-lg-5, .col-lg-7, .col-12 {
+              max-width: 100%;
+              flex: 0 0 100%;
+            }
+          }
+          @media (max-width: 400px) {
+            .info-wrap, .php-email-form {
+              padding: 4px;
+            }
+          }
+        </style>
 
     </section><!-- /Contact Section -->
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
 
+  <footer id="footer" class="footer position-relative light-background" style="background: #fff; border-top: 1px solid #eee;">
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Bijon_solutions</strong> <span>All Rights Reserved</span></p>
+      <div class="footer-label d-flex flex-wrap justify-content-center align-items-center py-3 gap-2 text-center" style="background: #fff; border-radius: 16px; box-shadow: 0 2px 12px 0 rgba(30,30,30,0.07); margin: 0 auto; max-width: 480px;">
+        <span class="copyright mb-0">©
+        <strong class="sitename mb-0">Bijon Solutions</strong></span>
+        <span class="mb-0">All Rights Reserved</span>
       </div>
-      <div class="credits">
-     
     </div>
-
+    <style>
+      #footer {
+        background: #fff !important;
+        border-top: 1px solid #eee;
+      }
+      #footer .footer-label {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 2px 12px 0 rgba(30,30,30,0.07);
+        margin: 0 auto;
+        max-width: 480px;
+        padding: 0.7rem 1.5rem;
+      }
+      #footer .copyright, #footer .sitename, #footer span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1.5;
+        color: #14213d;
+        font-size: 1.08em;
+      }
+      #footer .sitename {
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        padding: 0 2px;
+      }
+      @media (max-width: 575.98px) {
+        #footer .footer-label {
+          flex-direction: column;
+          gap: 0.2rem;
+          padding: 0.5rem 0.5rem;
+        }
+        #footer .copyright, #footer .sitename, #footer span {
+          font-size: 1em;
+        }
+      }
+      body.dark-mode #footer, body.dark-mode #footer .footer-label {
+        background: #1a2238 !important;
+        color: #e0f7fa !important;
+        box-shadow: 0 2px 12px 0 rgba(30,30,30,0.12);
+        border-top: 1px solid #333;
+      }
+      body.dark-mode #footer .copyright, body.dark-mode #footer .sitename, body.dark-mode #footer span {
+        color: #ffd700 !important;
+      }
+    </style>
   </footer>
 
   <!-- Scroll Top -->
@@ -699,6 +1131,30 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    (function() {
+      var toggleBtn = document.getElementById('dark-mode-toggle');
+      var storedTheme = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      function setDarkMode(on) {
+        document.body.classList.toggle('dark-mode', on);
+        toggleBtn.innerHTML = on
+          ? '<i class="bi bi-sun"></i>'
+          : '<i class="bi bi-moon"></i>';
+      }
+      // Initial mode: always start in light mode unless user has preference
+      var dark = storedTheme === 'dark';
+      setDarkMode(dark);
+      // Toggle event
+      toggleBtn.addEventListener('click', function() {
+        dark = !document.body.classList.contains('dark-mode');
+        setDarkMode(dark);
+        localStorage.setItem('theme', dark ? 'dark' : 'light');
+      });
+    })();
+  </script>
 
 </body>
 
